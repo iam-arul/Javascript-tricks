@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p style="height:500px;line-height:500px;background-color:#000;text-align:center;font-size:30px;color:#fff;padding:30px;cursor:pointer" id="myP" onmousedown="mouseDown()">#000000
+</p>
+
+<script>
+function getColor() {
+  return (
+    "#" +
+    Math.random()
+      .toString(16)
+      .slice(2, 8)
+  );
+}
+function mouseDown() {
+    document.getElementById("myP").style.backgroundColor = getColor();
+ document.getElementById("myP").innerHTML = getColor();
+}
+
+</script>
+
+</body>
+</html>
